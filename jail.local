@@ -1,0 +1,13 @@
+[DEFAULT]
+allowipv6 = auto
+
+[nmap-scan]
+enabled = true
+filter = nmap-scan
+logpath = /var/log/syslog
+bantime = 86400000       
+findtime = 600         
+maxretry = 1           
+maxmatches = 1
+banaction = iptables-allports
+port = all
